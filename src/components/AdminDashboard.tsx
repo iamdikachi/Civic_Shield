@@ -41,11 +41,13 @@ import {
   UserX,
   FileSpreadsheet,
   Layers,
-  Sparkles
+  Sparkles,
+  Heading1
 } from "lucide-react";
 import { Report, ReportStatus, CrimeCategory, Officer, AuditLog, User, SystemSettings } from "../types";
 import { dbInstance } from "../utils/mockData";
 import InteractiveMap from "./InteractiveMap";
+import { h1 } from "motion/react-m";
 
 interface AdminDashboardProps {
   currentUser: any; // User or Staff
@@ -193,6 +195,8 @@ export default function AdminDashboard({
     setReportsList([...dbInstance.getReports()]);
     setCaseCommentText("");
   };
+
+  
 
   // Handle Add Officer
   const handleAddOfficerSubmit = (e: React.FormEvent) => {
@@ -1027,7 +1031,7 @@ export default function AdminDashboard({
                 </div>
               </div>
             )}
-
+              
             {/* TAB 3: DEDUPLICATION / DUPLICATES QUEUE */}
             {activeTab === "duplicates" && (
               <div className="space-y-6">
