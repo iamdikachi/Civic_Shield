@@ -1,0 +1,6 @@
+{
+  "name": "Online Crime Reporting System",
+  "description": "A comprehensive public safety platform allowing citizens to report incidents, track cases visually with interactive mapping, and enabling law enforcement to manage and analyze crime trends through heatmaps and analytics.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
